@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Way Of Success - I AM NOTHING BUT AN ISLAMIC SERVANT</title>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.475.0?external=react",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0"
+  }
+}
+</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --emerald: #10b981;
+      --emerald-dark: #065f46;
+      --gold: #D4AF37;
+      --gold-light: #F4DF4E;
+    }
+    
+    * {
+      transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                  border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                  transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                  opacity 0.4s ease,
+                  box-shadow 0.4s ease;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #020202;
+      color: #e5e5e5;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      /* Refined Islamic Background - Dark Subtle Calligraphy Texture */
+      background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.94)),
+        url("https://www.transparenttextures.com/patterns/islamic-art.png"),
+        url("https://images.unsplash.com/photo-1590076077531-97216a70425e?auto=format&fit=crop&q=80&w=2000");
+      background-attachment: fixed;
+      background-size: auto, auto, cover;
+      background-position: center;
+      position: relative;
+    }
+    
+    /* Elegant Geometric Overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 0l3 15 12 3 3 12 15 3-15 3-3 12-12 3-3 15-3-15-12-3-3-12-15-3 15-3 3-12 12-3 3-15z' fill='%2310b981' fill-opacity='0.04' fill-rule='evenodd'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .font-amiri { font-family: 'Amiri', serif; }
+    .font-montserrat { font-family: 'Montserrat', sans-serif; }
+    .font-playfair { font-family: 'Playfair Display', serif; }
+
+    /* Premium Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #020202;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(to bottom, var(--emerald-dark), var(--gold), var(--emerald-dark));
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--emerald);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes scaleIn {
+      from { opacity: 0; transform: scale(0.96); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+    
+    .animate-scale-in {
+      animation: scaleIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    .animate-float {
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .glass {
+      background: rgba(12, 12, 12, 0.7);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      border: 1px solid rgba(16, 185, 129, 0.12);
+    }
+
+    .gold-glow {
+      text-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+    }
+
+    #root {
+      position: relative;
+      z-index: 1;
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+    
+    .islamic-card {
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+      border: 1px solid rgba(16, 185, 129, 0.1);
+    }
+    .islamic-card:hover {
+      border-color: rgba(16, 185, 129, 0.4);
+      box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.9);
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="index.tsx"></script>
+</body>
+</html>

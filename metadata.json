@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Copy of The Way Of Success",
+  "description": "I AM NOTHING BUT AN ISLAMIC SERVANT - A modern Islamic web app to strengthen your Iman daily through Quranic verses, Hadith, Qaza e Umri (prayer tracking), and inspirational media.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
